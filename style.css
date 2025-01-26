@@ -4,6 +4,8 @@
   font-family: "Space Grotesk", sans-serif;
   font-size: 100%;
   box-sizing: border-box;
+  /* border-bottom-color: rgb(155, 47, 14); */
+
   
 }
 
@@ -21,7 +23,7 @@ button {
   font-family: "Space Grotesk", sans-serif;
   font-size: 100%;
 }
-body {
+.body {
   background-color: rgb(130, 46, 17);
 
 }
