@@ -112,7 +112,8 @@ button {
   column-gap: 25%;
   align-items: center;
   height: 100vh;
-  box-shadow: -10px 20px 5px rgb(68, 23, 9);
+  box-shadow: -10px 20px 10px rgb(68, 23, 9);
+  
   
   
 
@@ -209,6 +210,7 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-shadow: -10px 20px 10px rgb(68, 23, 9);
 }
 
 .west-african {
@@ -252,9 +254,7 @@ h1 {
 
 .jollof-debate {
   
-  display: grid;
-  
-  column-gap: 10px;
+  display: flex;
   align-items: center;
   
   
@@ -270,13 +270,22 @@ h1 {
 }
 
 .jollof-debate-txt {
+  display: inline-flex;
   background-color: black;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  height: 100%;
+  
+}
+.static-txt {
+  font-size: 2rem;
+  font-weight: 500;
+
+}
+.typing-txt {
+  display: inline-flex;
 }
 
-.typing-txt {
-  display: grid;
+.typing-txt > ul {
+  list-style: none;
 }
 
 .jollof-debate-img {
@@ -327,6 +336,7 @@ h1 {
 
 .scenery-grid {
   display: grid;
+  border-bottom: ;
   
 }
 
@@ -345,8 +355,55 @@ h1 {
 }
 .scenery-images > img {
   height: 70%;
-  width: 70%;;
+  width: 70%;
   box-shadow: 10px 10px 10px black;
+  
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.event-carousel-grid {
+  
+  
+}
+.event-carousel {
+  background-color: aliceblue;
+  white-space: nowrap;
+  overflow: hidden;
+  
+  
+}
+
+.event-carousel:hover .logos-slides {
+  animation-play-state: paused;
+}
+
+.event-carousel > h2 {
+
+}
+
+.logos-slides {
+  
+  display: inline-block;
+  animation: 10s slide infinite linear;
+}
+
+.logos-slides img {
+  margin: 0 40px;
+  
+  
+  
+  
+  
   
 }
 /**

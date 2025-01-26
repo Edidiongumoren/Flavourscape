@@ -131,6 +131,7 @@ nav ul li a {
 #hero-section {
     background-color: rgb(130, 46, 17);
     margin-top: 60px;
+    box-shadow: -10px 20px 10px rgb(68, 23, 9);
 }
 
 .text,
