@@ -1,271 +1,604 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap"
+    rel="stylesheet">
+
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script> -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+  <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="dist/css/bootstrap-theme.min.css" rel="stylesheet">
+  <link href="extra.css" rel="stylesheet">
   <script src="script.js"></script>
   <title>Document</title>
+  <style>
+    .bg-slider .slider-images {
+      display: flex;
+      width: 300%;
+      animation: slide 15s infinite;
+    }
+  
+    .bg-slider .slider-image {
+      width: 33.33%;
+      object-fit: cover;
+      height: 100vh;
+      opacity: 0.8;
+      transition: opacity 1s;
+    }
+  
+    .bg-slider .slider-image:nth-child(1) {
+      opacity: 1;
+    }
+    .bg-slider .slider-image:nth-child(2) {
+      opacity: 0;
+    }
+    .bg-slider .slider-image:nth-child(3) {
+      opacity: 0;
+    }
+  
+    @keyframes slide {
+      0%, 33.33% {
+        opacity: 1;
+      }
+      34%, 66.66% {
+        opacity: 0;
+      }
+      67%, 100% {
+        opacity: 0;
+      }
+    }
+  </style>
+  
+
+
+
+
 </head>
-<body>
-  
 
-    <div class="first"></div>
-    
-    
-    <div class="header col-12">
-      <div class="logo">Flavourscape</div>
-      <div class="nav-menu" id="nav-meu">
-        <div>menu</div>
-        <div>about</div>
-        <div>event</div>
-        <div><button>Reserve a table</button></div>
-        
-      </div>
+<body class="container body">
+  <div class="first">
+
+  </div>
+
+  <!-- header -->
+  <div class="header col-12">
+    <div class="logo">Flavourscape</div>
+    <div class="nav-menu" id="nav-meu">
+      <div>menu</div>
+      <div>about</div>
+      <div>event</div>
+      <div><button>Reserve a table</button></div>
+
     </div>
-    <div class="container col-12">
-      <div class="hero-section col-12">
-        <div class="welcome-msg col-12">
-          <h1>This is where the journey begins</h1> 
-          <div>
-            <h2>Indulge in mouth watering dishes from across the African continent agaisnt a dreamy scenery...</h2>
-            <p>Starting with our signature dishes</p> 
-          </div>
-                
-        </div>
-        <div class="signature-dishes col-6">
-          <div class="dish-slide col-5">
-            <img class="img-1" src="afang-soup-removebg-preview.png" alt="">
-                  
-                  
-            <img class="img-2" src="EFO_RIRO-removebg-preview.png" alt="">
-          
-          
-            <img class="img-3" src="Romazava-removebg-preview.png" alt="">
-          </div>
-          
-          
-        </div>
-        
-      </div> 
-  
-      
-  
-      <div class="menu col-12">
-        <div class="west-african col-12">
-          
-          <img src="images/palm-nut-soup-removebg-preview.png" alt="">
-          <img src="images/Poulet-Yassa.jpg" alt="">
-          <img src="EFO_RIRO-removebg-preview.png" alt="">
-        
-        
-          <img src="images/egusi.jpg" alt="">
-          <img src="images/ndole-plantain-removebg-preview.png" alt="">
-          <img src="images/suya.jpg" alt="">
-        
-        
-          <img src="images/Plasas.jpg" alt="">
-          <img src="images/Thieboudienne.webp" alt="">
-          <img src="afang-soup-removebg-preview.png" alt="">
-          
-          
-  
-        </div>
-        <div class="east-african col-12">
-          <img src="images/rolex-removebg-preview.png" alt="">
-          <img src="images/samosa.jpg" alt="">
-          <img src="images/mandazi.jpg" alt="">
-          <img src="images/doro-wat-hero.jpg" alt="">
-          <img src="pweza.webp" alt="">
-          <img src="images/kitfo.jpg" alt="">
-          <img src="images/Beyaynetu-removebg-preview.png" alt="">
-        </div>
-        <div class="south-african col-12">
-          <img src="images/seswaa.jpg" alt="">
-          <img src="images/Caldeirada_de_cabrito.jpg" alt="">
-          <img src="images/MOGODU-TRIPE-removebg-preview.png" alt="">
-          <img src="images/Romazava.jpg" alt="">
-        </div>
-        <div class="north-african col-12">
-          <img src="images/tajine-removebg-preview.png" alt="">
-        </div>
-        <div class="central-african col-12">
-          <img src="images/congolese-pondu--removebg-preview.png" alt="">
-        </div>
-        <div class="drinks col-12">
-          <img src="images/zobo-Africa-drink.webp" alt="">
-          <img src="images/sobia-African-drink.webp" alt="">
-          <img src="images/witblits-African-drink.webp" alt="">
-          <img src="images/oshikundu-African-drink.webp" alt="">
-          <img src="images/palm-wine-African-drink.webp" alt="">
-        </div>
-      </div>
-  
-      <div class="jollof-debate col-12">
-        <div class="jollof-debate-txt col-12">
-          <div class="typing-txt">
-            
-            <p>Ghana jellof is the best jollof to ever exist</p>
-            <p>Nigeria jellof is the best jollof to ever exist</p>
-            <p>senegal jellof is the best jollof to ever exist</p>
-            <p>cameroon jellof is the best jollof to ever exist</p>
-            <button>Reserve a table</button>
-          </div>
-          <div class="turning-circle">
+  </div>
 
-            <img class="first-plate" src="images/nigerian-jollof-rice.jpg" alt="">
-            <img class="second-plate" src="images/senegalese-jollof.jpg" alt="">
-            <img class="third-plate" src="images/cameroonian-jollof.jpg" alt="">
-            <img class="fourth-plate" src="images/ghana-jellof.jpg" alt="">
-          </div>
-        </div>
+  <!-- hero section -->
+  <main>
+
+    <!-- Hero Section -->
+   <div class="section flex" id="hero-section">
+    <div class="text">
+      <h1 class="primary">
+        This is where the journey begins<br />
+        It's an <span>Experience</span>
+      </h1>
+
+      <p class="tertiary">
+        Indulge in mouth watering dishes from across the African continent agaisnt a dreamy scenery...
+      </p>
+      <p>Starting with our signature dishes</p>
+    </div>
+    <div class="visual">
+        <img class="mySlides w3-animate-fading img-1" src="afang-soup-removebg-preview.png" alt="">
+        <img class="mySlides w3-animate-fading img-2" src="EFO_RIRO-removebg-preview.png" alt="">
+        <img class="mySlides w3-animate-fading img-3" src="Romazava-removebg-preview.png" alt="">
+      <!--<img src="https://raw.githubusercontent.com/programmercloud/foodlover/main/img/home-banner.png" alt="" /> -->
+    </div>
+  </div>
+  <!-- End Hero Section -->
+
+  <hr>
+
+  <section class="food-blog p-5">
+    <div class="container">
+        <h1 class="text-center mb-4 text-green">Food Categories</h1>
         
-        
-        
-      </div>
-  
-      <div class="scenery-grid col-12">
-        <p>choose a scenery</p>
-        <div class="scenery-images">
-          <img src="images/booth.jpg" alt="">
-          <img src="images/center-seat.webp" alt="">
-          <img src="images/real-window-seat.jpg" alt="">
-          
-        </div>
-      </div>
-  
-      <div class="event-carousel col-12">
-        <p>we love the heat...and we take it everywhere</p>
-        <div>
-          <img src="images/cooking-classes.jpg" alt="">
-          <div>
-            <p></p>
-            <p></p>
-          </div>
-        </div>
-        <div>
-          <img src="images/bistro-party.jpg" alt="">
-          <div>
-            <p></p>
-            <p></p>
-          </div>
-        </div>
-        <div>
-          <img src="images/food-fest.jpg" alt="">
-          <div>
-            <p></p>
-            <p></p>
-          </div>
-        </div>
-        <div>
-          <img src="images/food-tasting-party.jpg" alt="">
-          <div>
-            <p></p>
-            <p></p>
-          </div>
-        </div>
-        <div>
-          <img src="images/picnic.jpg" alt="">
-          <div>
-            <p></p>
-            <p></p>
-          </div>
-        </div>
-      </div>
-  
-      <div class="about col-12">
-        <p>about us</p>
-        <p>Flavourscape is a new dining experience that combines the warmth of African Hospitality with a touch of lobal sophistication. Our mission is simple: create moments where flavours, design, technology come together to leave our guests in awe. We are reservation-only diner</p>
-      </div>
-  
-      <div class="our-chefs col-12">
-        <p>Our Chefs</p>
-        <p></p>
-        <div class="chef-pics">
-          <div>
-            <p>Chef Ndiche swears his calling is to cook</p>
-            <img src="images/chef-cooking-with-love.jpg" alt="">
-          </div>
-          <div>
-            <p></p>
-            <img src="images/smiling-chef.jpg" alt="">
-          </div>
-          <div>
-            <p></p>
-            <img src="images/accepting-reservation.webp" alt="">
-          </div>
-        </div>
-  
-        
-      </div>
-  
-      <div class="reservation-form col-12">
-        <div class="cta">
-          <p>Reserve a Table</p>
-          <p>...we cannot wait to serve</p>
-        </div>
-        <div class="form">
-          <div class="name">
-            <p>Name</p>
-            <input type="text" placeholder="Type your name">
-          </div>
-          <div class="email">
-            <p>Email</p>
-            <input type="text" placeholder="Enter your email">
-          </div>
-          <div class="date-block">
-            <p>pick a date and time</p>
-            <div>
-              <input type="date" class="date-picker" id="date-js">
-              <input type="time" class="time">
+        <div class="row">
+          <h3 class="text-center mb-4 text-green">West African Foods</h1>
+
+            <div class="col-sm-12 col-md-4 col-lg-3 col-xl-3">
+                <div class="list mb-4">
+                    <div class="image mb-3">
+                        <img class="" src="images/palm-nut-soup-removebg-preview.png" alt="image holder" />
+                    </div>
+                    <div class="data">
+                        <h2>Chicken Gravy</h2>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-3 col-xl-3">
+                <div class="list  mb-4">
+                    <div class="image mb-3">
+                        <img class="w-100"
+                            src="images/Poulet-Yassa.jpg"
+                            alt="image holder" />
+                    </div>
+                    <div class="data">
+                        <h2>Chicken biryani</h2>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-3 col-xl-3">
+                <div class="list mb-4">
+                    <div class="image mb-3">
+                        <img class="w-100" src="EFO_RIRO-removebg-preview.png" alt="image holder" />
+                    </div>
+                    <div class="data">
+                        <h2>Mutton Biryani</h2>
+                        
+                    </div>
+                </div>
             </div>
           
+            <div class="col-sm-12 col-md-4 col-lg-3 col-xl-3">
+                <div class="list">
+                    <div class="image mb-3">
+                        <img class="w-100" src="images/egusi.jpg " alt="image holder" />
+                    </div>
+                    <div class="data">
+                        <h2>Madurai Kari Dosai</h2>
+                        
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-3 col-xl-3">
+                <div class="list">
+                    <div class="image mb-3">
+                        <img class="w-100" src="images/ndole-plantain-removebg-preview.png" alt="image holder" />
+                    </div>
+                    <div class="data">
+                        <h2>Prawns Biryani</h2>
+                      
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-3 col-xl-3">
+                <div class="list">
+                    <div class="image mb-3">
+                        <img class="w-100" src="images/suya.jpg" alt="image holder" />
+                    </div>
+                    <div class="data">
+                        <h2>Onion Rava Masala Dosa</h2>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-3 col-xl-3">
+              <div class="list">
+                  <div class="image mb-3">
+                      <img class="w-100" src="images/Plasas.jpg" alt="image holder" />
+                  </div>
+                  <div class="data">
+                      <h2>Onion Rava Masala Dosa</h2>
+                      
+                  </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-3 col-xl-3">
+              <div class="list">
+                  <div class="image mb-3">
+                      <img class="w-100" src="images/Thieboudienne.webp" alt="image holder" />
+                  </div>
+                  <div class="data">
+                      <h2>Onion Rava Masala Dosa</h2>
+                      
+                  </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-3 col-xl-3">
+              <div class="list">
+                  <div class="image mb-3">
+                      <img class="w-100" src="afang-soup-removebg-preview.png" alt="image holder" />
+                  </div>
+                  <div class="data">
+                      <h2>Onion Rava Masala Dosa</h2>
+                      
+                  </div>
+              </div>
           </div>
-          
-          <div>
-            <label for="drop-down">Where would you like to seat?</label>
-            <select name="scenery-drop-down" id="scene">
-              <option value="">Center Seat</option>
-              <option value="">Booth</option>
-              <option value="">Window seat</option>
-              
-            </select>
-          </div>
-          <div>
-            <p>Company size (between 1-12)</p>
-            <input type="text" placeholder="how many people are you coming with?">
-          </div>
-          <button>Submit</button>
-          
         </div>
-        <div class="contact">
-          <div class="socials"></div>
-          <div class="address">
-            No.1 Off Reality Road, 
-            imagination Express,
-            Serenghetti.
-            +111 000 777 888
+        <br><br><br>
+
+
+        <div class="row">
+          <hr>
+          <h3 class="text-center mb-4 text-green">East African Foods</h1>
+           
+
+            <div class="col-sm-12 col-md-4 col-lg-3 col-xl-3">
+                <div class="list mb-4">
+                    <div class="image mb-3">
+                        <img class="w-100" src="images/rolex-removebg-preview.png" alt="image holder" />
+                    </div>
+                    <div class="data">
+                        <h2>Chicken Gravy</h2>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-3 col-xl-3">
+                <div class="list  mb-4">
+                    <div class="image mb-3">
+                        <img class="w-100"
+                            src="images/samosa.jpg"
+                            alt="image holder" />
+                    </div>
+                    <div class="data">
+                        <h2>Chicken biryani</h2>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-3 col-xl-3">
+                <div class="list mb-4">
+                    <div class="image mb-3">
+                        <img class="w-100" src="images/mandazi.jpg" alt="image holder" />
+                    </div>
+                    <div class="data">
+                        <h2>Mutton Biryani</h2>
+                        
+                    </div>
+                </div>
+            </div>
+          
+            <div class="col-sm-12 col-md-4 col-lg-3 col-xl-3">
+                <div class="list">
+                    <div class="image mb-3">
+                        <img class="w-100" src="images/doro-wat-hero.jpg " alt="image holder" />
+                    </div>
+                    <div class="data">
+                        <h2>Madurai Kari Dosai</h2>
+                        
+
+                    </div>
+                </div>
+            </div>
+          
+            <div class="col-sm-12 col-md-4 col-lg-3 col-xl-3">
+                <div class="list">
+                    <div class="image mb-3">
+                        <img class="w-100" src="images/kitfo.jpg" alt="image holder" />
+                    </div>
+                    <div class="data">
+                        <h2>Onion Rava Masala Dosa</h2>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-3 col-xl-3">
+              <div class="list">
+                  <div class="image mb-3">
+                      <img class="w-100" src="images/Beyaynetu-removebg-preview.png" alt="image holder" />
+                  </div>
+                  <div class="data">
+                      <h2>Onion Rava Masala Dosa</h2>
+                      
+                  </div>
+              </div>
+            </div>
           </div>
         </div>
+        <br><br><br>
+
+        <div class="row">
+          <hr>
+          <h3 class="text-center mb-4 text-green">South African Foods</h1>
+
+            <div class="col-sm-12 col-md-4 col-lg-3 col-xl-3">
+                <div class="list mb-4">
+                    <div class="image mb-3">
+                        <img class="w-100" src="images/seswaa.jpg"" alt="image holder" />
+                    </div>
+                    <div class="data">
+                        <h2>Chicken Gravy</h2>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-3 col-xl-3">
+                <div class="list  mb-4">
+                    <div class="image mb-3">
+                        <img class="w-100"
+                            src="images/Caldeirada_de_cabrito.jpg"
+                            alt="image holder" />
+                    </div>
+                    <div class="data">
+                        <h2>Chicken biryani</h2>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-3 col-xl-3">
+                <div class="list mb-4">
+                    <div class="image mb-3">
+                        <img class="w-100" src="images/MOGODU-TRIPE-removebg-preview.png" alt="image holder" />
+                    </div>
+                    <div class="data">
+                        <h2>Mutton Biryani</h2>
+                        
+                    </div>
+                </div>
+            </div>
+          
+            <div class="col-sm-12 col-md-4 col-lg-3 col-xl-3">
+                <div class="list">
+                    <div class="image mb-3">
+                        <img class="w-100" src="images/Romazava.jpg" alt="image holder" />
+                    </div>
+                    <div class="data">
+                        <h2>Madurai Kari Dosai</h2>
+                        
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<!-- west african foods-->
+  <!-- <div class="row">
+    <div class="menu col-12">
+      <div class="west-african col-12">
+        <img src="images/palm-nut-soup-removebg-preview.png" alt="">
+        <img src="images/Poulet-Yassa.jpg" alt="">
+        <img src="EFO_RIRO-removebg-preview.png" alt="">
+
+        <img src="images/egusi.jpg" alt="">
+        <img src="images/ndole-plantain-removebg-preview.png" alt="">
+        <img src="images/suya.jpg" alt="">
+
+        <img src="images/Plasas.jpg" alt="">
+        <img src="images/Thieboudienne.webp" alt="">
+        <img src="afang-soup-removebg-preview.png" alt="">
       </div>
-  
-      <div class="footer col-12">
-        <div class="links">
-          <a href="google.com">Careers</a>
-          <a href="google.com"></a>
-          <a href="google.com"></a>
-          <a href="google.com"></a>
-        </div>
-          
+
+  </div> -->
+    
+<!-- est african foods -->
+      <!-- <div class="east-african col-12">
+        <img src="images/rolex-removebg-preview.png" alt="">
+        <img src="images/samosa.jpg" alt="">
+        <img src="images/mandazi.jpg" alt="">
+        <img src="images/doro-wat-hero.jpg" alt="">
+        <img src="pweza.webp" alt="">
+        <img src="images/kitfo.jpg" alt="">
+        <img src="images/Beyaynetu-removebg-preview.png" alt="">
+      </div> -->
+
+<!--south african foods-->
+      <!-- <div class="south-african col-12">
+        <img src="images/seswaa.jpg" alt="">
+        <img src="images/Caldeirada_de_cabrito.jpg" alt="">
+        <img src="images/MOGODU-TRIPE-removebg-preview.png" alt="">
+        <img src="images/Romazava.jpg" alt="">
+      </div> -->
+
+<!-- north african foods-->
+      <div class="north-african col-12">
+        <img src="images/tajine-removebg-preview.png" alt="">
+      </div>
+
+      <div class="central-african col-12">
+        <img src="images/congolese-pondu--removebg-preview.png" alt="">
+      </div>
+    
+      <div class="drinks col-12">
+        <img src="images/zobo-Africa-drink.webp" alt="">
+        <img src="images/sobia-African-drink.webp" alt="">
+        <img src="images/witblits-African-drink.webp" alt="">
+        <img src="images/oshikundu-African-drink.webp" alt="">
+        <img src="images/palm-wine-African-drink.webp" alt="">
       </div>
     </div>
+
+    <div class="jollof-debate col-12">
+      <div class="jollof-debate-txt col-12">
+        <div class="typing-txt">
+
+          <p>Ghana jellof is the best jollof to ever exist</p>
+          <p>Nigeria jellof is the best jollof to ever exist</p>
+          <p>senegal jellof is the best jollof to ever exist</p>
+          <p>cameroon jellof is the best jollof to ever exist</p>
+          <button>Reserve a table</button>
+        </div>
+        <div class="turning-circle">
+
+          <img class="first-plate" src="images/nigerian-jollof-rice.jpg" alt="">
+          <img class="second-plate" src="images/senegalese-jollof.jpg" alt="">
+          <img class="third-plate" src="images/cameroonian-jollof.jpg" alt="">
+          <img class="fourth-plate" src="images/ghana-jellof.jpg" alt="">
+        </div>
+      </div>
+
+
+
+    </div>
+
+    <div class="scenery-grid col-12">
+      <p>choose a scenery</p>
+      <div class="scenery-images">
+        <img src="images/booth.jpg" alt="">
+        <img src="images/center-seat.webp" alt="">
+        <img src="images/real-window-seat.jpg" alt="">
+
+      </div>
+    </div>
+
+    <div class="event-carousel col-12">
+      <p>we love the heat...and we take it everywhere</p>
+      <div>
+        <img src="images/cooking-classes.jpg" alt="">
+        <div>
+          <p></p>
+          <p></p>
+        </div>
+      </div>
+      <div>
+        <img src="images/bistro-party.jpg" alt="">
+        <div>
+          <p></p>
+          <p></p>
+        </div>
+      </div>
+      <div>
+        <img src="images/food-fest.jpg" alt="">
+        <div>
+          <p></p>
+          <p></p>
+        </div>
+      </div>
+      <div>
+        <img src="images/food-tasting-party.jpg" alt="">
+        <div>
+          <p></p>
+          <p></p>
+        </div>
+      </div>
+      <div>
+        <img src="images/picnic.jpg" alt="">
+        <div>
+          <p></p>
+          <p></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="about col-12">
+      <p>about us</p>
+      <p>Flavourscape is a new dining experience that combines the warmth of African Hospitality with a touch of lobal
+        sophistication. Our mission is simple: create moments where flavours, design, technology come together to leave
+        our guests in awe. We are reservation-only diner</p>
+    </div>
+
+    <div class="our-chefs col-12">
+      <p>Our Chefs</p>
+      <p></p>
+      <div class="chef-pics">
+        <div>
+          <p>Chef Ndiche swears his calling is to cook</p>
+          <img src="images/chef-cooking-with-love.jpg" alt="">
+        </div>
+        <div>
+          <p></p>
+          <img src="images/smiling-chef.jpg" alt="">
+        </div>
+        <div>
+          <p></p>
+          <img src="images/accepting-reservation.webp" alt="">
+        </div>
+      </div>
+
+
+    </div>
+
+    <div class="reservation-form col-12">
+      <div class="cta">
+        <p>Reserve a Table</p>
+        <p>...we cannot wait to serve</p>
+      </div>
+      <div class="form">
+        <div class="name">
+          <p>Name</p>
+          <input type="text" placeholder="Type your name">
+        </div>
+        <div class="email">
+          <p>Email</p>
+          <input type="text" placeholder="Enter your email">
+        </div>
+        <div class="date-block">
+          <p>pick a date and time</p>
+          <div>
+            <input type="date" class="date-picker" id="date-js">
+            <input type="time" class="time">
+          </div>
+
+        </div>
+
+        <div>
+          <label for="drop-down">Where would you like to seat?</label>
+          <select name="scenery-drop-down" id="scene">
+            <option value="">Center Seat</option>
+            <option value="">Booth</option>
+            <option value="">Window seat</option>
+
+          </select>
+        </div>
+        <div>
+          <p>Company size (between 1-12)</p>
+          <input type="text" placeholder="how many people are you coming with?">
+        </div>
+        <button>Submit</button>
+
+      </div>
+      <div class="contact">
+        <div class="socials"></div>
+        <div class="address">
+          No.1 Off Reality Road,
+          imagination Express,
+          Serenghetti.
+          +111 000 777 888
+        </div>
+      </div>
+    </div>
+
+    <div class="footer col-12">
+      <div class="links">
+        <a href="google.com">Careers</a>
+        <a href="google.com"></a>
+        <a href="google.com"></a>
+        <a href="google.com"></a>
+      </div>
+
+    </div>
+  </div>
+<script>
+  var myIndex = 0;
+  carousel();
+  
+  function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 3600); // Change image every 2 seconds
+  }
+  </script>
+  
     
 
-    
-      
-  
+
 </body>
+
 </html>
